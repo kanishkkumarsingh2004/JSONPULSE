@@ -92,17 +92,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/[0.05] mt-6 md:mt-8 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
-          <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
-            © {currentYear} {siteConfig.companyName}. All rights reserved.
-          </p>
-          <div className="flex gap-4 md:gap-6 text-xs md:text-sm">
-            <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors">
-              Terms of Service
-            </Link>
+        <div className="border-t border-white/[0.05] mt-6 md:mt-8 pt-6 md:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 mb-4">
+            <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
+              © {currentYear} {siteConfig.companyName}. All rights reserved.
+            </p>
+            <div className="flex gap-4 md:gap-6 text-xs md:text-sm">
+              <Link href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors">
+                Terms & Conditions
+              </Link>
+            </div>
+          </div>
+          
+          {/* Watermark */}
+          <div className="text-center pt-4 border-t border-white/[0.03]">
+            <p className="text-gray-500 text-xs md:text-sm opacity-70 hover:opacity-100 transition-all duration-300">
+              Crafted with <span className="text-red-500 animate-pulse">❤️</span> by{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 font-bold">
+                Kanishk Kumar Singh
+              </span>
+            </p>
           </div>
         </div>
       </div>
