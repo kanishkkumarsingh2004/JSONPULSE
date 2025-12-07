@@ -295,20 +295,6 @@ export default function TermsAndConditions() {
             </p>
           </section>
 
-          {/* Contact Information */}
-          <section>
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-4">18. Contact Us</h2>
-            <div className="text-gray-300 space-y-2">
-              <p className="leading-relaxed">
-                If you have any questions about these Terms, please contact us:
-              </p>
-              <ul className="space-y-1 ml-4">
-                <li>Email: <a href="mailto:support@jsonpulse.com" className="text-blue-400 hover:text-blue-300">support@jsonpulse.com</a></li>
-                <li>Website: <a href="/" className="text-blue-400 hover:text-blue-300">jsonpulse.com</a></li>
-              </ul>
-            </div>
-          </section>
-
           {/* Acceptance */}
           <section className="border-t border-white/[0.1] pt-6">
             <p className="text-gray-400 text-sm leading-relaxed">
